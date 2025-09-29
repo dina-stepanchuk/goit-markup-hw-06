@@ -50,6 +50,77 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close">
+            <svg class="button-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li>
+                <a class="mobile-menu-item menu-link" href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li><a class="mobile-menu-item" href="">Portfolio</a></li>
+              <li><a class="mobile-menu-item" href="">Contacts</a></li>
+            </ul>
+          </nav>
+          <address class="mobile-contacts">
+            <ul class="mobile-contacts-list">
+              <li>
+                <a
+                  class="mobile-contact-item mobile-phone"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a class="mobile-contact-item" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="social-list">
+            <li class="social-list-icon">
+              <a href="#" class="social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-icon">
+              <a href="#" class="social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-icon">
+              <a href="#" class="social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-icon">
+              <a href="#" class="social-link">
+                <svg class="social-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <!-- Main -->
@@ -62,7 +133,7 @@
         </div>
       </section>
       <!-- Section studio -->
-      <section class="main-benefits hidden">
+      <section class="main-benefits">
         <div class="container main-benefits-container">
           <h2 class="visually-hidden">Our Benefits</h2>
           <ul class="main-studio-list">
@@ -118,7 +189,7 @@
         </div>
       </section>
       <!-- Team section -->
-      <section class="main-team hidden">
+      <section class="main-team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="main-team-list">
@@ -294,7 +365,7 @@
         </div>
       </section>
       <!-- Portfolio section -->
-      <section class="main-portfolio hidden">
+      <section class="main-portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="main-portfolio-list">
@@ -417,7 +488,7 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer hidden">
+    <footer class="footer">
       <div class="footer-container container">
         <div class="footer-description">
           <a class="logo-footer" href="./index.html"
@@ -482,7 +553,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop hidden">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="button-icon" width="8" height="8">
