@@ -369,6 +369,119 @@ button {
 
 /*main-section*/
 
+.main {
+  background-color: #2e2f42;
+  padding: 72px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url("../images/backroung-image-mob.jpg");
+  @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/backroung-image-mob2x.jpg");
+  }
+}
+
+.main-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 216px;
+  margin-bottom: 72px;
+}
+
+.main-button {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.5;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 169px;
+  height: 56px;
+  display: block;
+  min-width: 169px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 112px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/backround-image-tablet.jpg");
+    @media screen and (min-resolution: 2x),
+      (-webkit-min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/backround-image-tablet2x.jpg");
+    }
+  }
+
+  .main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 36px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .main {
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/main-bg.jpg");
+    @media screen and (min-resolution: 2x),
+      (-webkit-min-device-pixel-ratio: 2) {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/main-bg2x.jpg");
+    }
+  }
+
+  .main-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 48px;
+  }
+}
+
 /*section-studio*/
 
 .main-benefits {
@@ -542,6 +655,10 @@ button {
 }
 
 @media screen and (min-width: 768px) {
+  .made > container {
+    width: 584px;
+  }
+
   .main-team-list {
     gap: 64px 24px;
   }
@@ -675,7 +792,6 @@ button {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   gap: 72px;
 }
 
@@ -812,6 +928,7 @@ button {
   background: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -825,4 +942,90 @@ button {
 .subscribe-icon {
   fill: #ffffff;
   margin-left: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .made > container {
+    width: 528px;
+  }
+
+  .footer {
+    background-color: #2e2f42;
+    padding-top: 91px;
+    padding-bottom: 101px;
+    padding-left: 108px;
+    padding-right: 164px;
+  }
+
+  .footer-container {
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 72px 24px;
+  }
+
+  .footer-description {
+    max-width: 264px;
+    text-align: left;
+  }
+
+  .footer-social-title {
+    text-align: left;
+  }
+
+  .footer-subscribe-title {
+    text-align: left;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+
+  .footer-description {
+    max-width: 264px;
+    text-align: left;
+    margin-right: 120px;
+  }
+
+  .footer-text {
+    max-width: 264px;
+  }
+
+  .footer-social-title {
+    text-align: left;
+  }
+
+  .footer-subscribe-title {
+    margin-left: 80px;
+    margin-bottom: 16px;
+  }
+
+  .subscribe-form {
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 24px;
+    margin-left: 80px;
+  }
+
+  .subscribe-input {
+    width: 264px;
+  }
 }
