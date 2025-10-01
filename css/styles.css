@@ -319,13 +319,13 @@ button {
 
 /*social-icons*/
 
-.social-list {
+.social-menu-list {
   display: flex;
   justify-content: center;
   gap: 40px;
 }
 
-.social-list-icon {
+.social-menu-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -336,12 +336,11 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
+.menu-icon {
   fill: #f4f4fd;
 }
 
-.social-list-icon:hover,
-.social-list-icon:focus {
+.social-menu-icon:focus {
   background-color: #404bbf;
 }
 
