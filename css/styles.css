@@ -287,10 +287,6 @@ button {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu-link {
-  color: #404bbf;
-}
-
 .mobile-menu-item:focus {
   color: #404bbf;
 }
@@ -309,16 +305,12 @@ button {
 }
 
 .mobile-contact-item {
+  color: #434455;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-phone {
-  color: #4d5ae5;
 }
 
 .mobile-contact-item:focus {
@@ -1186,12 +1178,17 @@ button {
 }
 
 .modal-checkbox-label {
+  display: flex;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   align-items: center;
+}
+
+.modal-checkbox {
+  flex-shrink: 0;
 }
 
 .modal-link {
@@ -1204,12 +1201,12 @@ button {
 .modal-checkbox {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  margin-right: 12px;
+  margin-right: 8px;
   background-color: transparent;
   fill: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -1244,7 +1241,30 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-button:hover,
 .form-button:focus {
   background-color: #404bbf;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-checkbox {
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .modal {
+    width: 408px;
+    min-height: 584px;
+    padding: 72px 24px 24px 24px;
+  }
+
+  .modal-checkbox {
+    margin-right: 12px;
+  }
 }
